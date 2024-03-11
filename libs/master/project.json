@@ -3,6 +3,18 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/master/src",
   "projectType": "library",
-  "targets": {},
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/master",
+        "tsConfig": "libs/master/tsconfig.lib.json",
+        "packageJson": "libs/master/package.json",
+        "main": "libs/master/src/index.ts",
+        "assets": ["libs/master/*.md"]
+      }
+    }
+  },
   "tags": []
 }

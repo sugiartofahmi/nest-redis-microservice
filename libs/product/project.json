@@ -3,6 +3,18 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/product/src",
   "projectType": "library",
-  "targets": {},
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/product",
+        "tsConfig": "libs/product/tsconfig.lib.json",
+        "packageJson": "libs/product/package.json",
+        "main": "libs/product/src/index.ts",
+        "assets": ["libs/product/*.md"]
+      }
+    }
+  },
   "tags": []
 }
