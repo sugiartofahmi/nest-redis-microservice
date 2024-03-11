@@ -1,0 +1,24 @@
+{
+  "name": "api-category",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/api-category/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "api-category:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "api-category:build:development"
+        },
+        "production": {
+          "buildTarget": "api-category:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
