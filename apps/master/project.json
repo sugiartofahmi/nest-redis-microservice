@@ -1,7 +1,7 @@
 {
   "name": "api-master",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/api-master/src",
+  "sourceRoot": "apps/master/src",
   "projectType": "application",
   "targets": {
     "serve": {

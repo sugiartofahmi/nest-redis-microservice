@@ -1,7 +1,7 @@
 {
   "name": "api-category",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/api-category/src",
+  "sourceRoot": "apps/category/src",
   "projectType": "application",
   "targets": {
     "serve": {
